@@ -6,6 +6,7 @@
 
 ## Text Style Transfe
 1. Expertise Style Transfer: A New Task Towards Better Communication between Experts and Laymen (Cao et al., ACL 2020)
+    link: https://aclanthology.org/2020.acl-main.100.pdf
 
 ## Diffusion Related Model
 
