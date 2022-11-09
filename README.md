@@ -8,7 +8,7 @@
 
 ## Text Simplification
 
-## Text Style Transfe
+## Text Style Transfer
 1. Expertise Style Transfer: A New Task Towards Better Communication between Experts and Laymen (Cao et al., ACL 2020)
     <br> * Paper: https://aclanthology.org/2020.acl-main.100.pdf
     <br> * Code: https://srhthu.github.io/expertise-style-transfer/
