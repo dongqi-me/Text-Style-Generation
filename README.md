@@ -1,6 +1,6 @@
 # Text-Style-Generation
 
-## Controllable Genetation
+## Controllable Text Generation
 
 ## Text Simplification
 
