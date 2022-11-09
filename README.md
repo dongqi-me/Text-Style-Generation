@@ -1,19 +1,8 @@
 # Text-Style-Generation
 
 目标：对不同的目标用户可以生成不同的文本，可以是可控制的，简化的，风格迁移的等等（如果有其他的方式也欢迎补充）
-主要重点收集2020年后的顶会Paper:
-NLP：
-EACL
-EMNLP
-ACL
-COLING
-NAACL
+主要重点收集2020年后的顶会Paper，例如NLP: EACL, EMNLP, ACL, COLING, NAACL. ML&AI: IJCAL, ICML, AAAI, NeurIPS, ICLR (其他有影响力的Paper也可以补充，但最好是17年后的）
 
-ML&AI:
-IJCAL
-ICML AAAI
-NeurIPS
-ICLR
 
 ## Controllable Text Generation
 
