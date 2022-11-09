@@ -4,7 +4,8 @@
 
 ## Text Simplification
 
-## Text Style Transfer
+## Text Style Transfe
+1. Expertise Style Transfer: A New Task Towards Better Communication between Experts and Laymen
 
 ## Diffusion Related Model
 
