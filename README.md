@@ -319,3 +319,7 @@
 
 
 ## Dataset
+
+
+## Acknowledgement
+We thank [Yang et al.](https://arxiv.org/pdf/2209.00796.pdf) for their comprehensive survey on recent development of diffusion models. Their work can be found [here](https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy)
