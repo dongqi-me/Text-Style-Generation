@@ -255,65 +255,322 @@
 68. Latent Diffusion Energy-Based Model for Interpretable Text Modeling (Yu et al., ICML 2022)
     <br> * Paper: https://proceedings.mlr.press/v162/yu22h.html
 
+### Controllable Text Generation
+
+1. Hafez: an Interactive Poetry Generation System (Ghazvininejad et al., ACL 2017)
+    <br> * Paper: https://aclanthology.org/P17-4008.pdf
+
+2. Toward Controlled Generation of Text (Hu et al., ICML 2017)
+    <br> * Paper: http://proceedings.mlr.press/v70/hu17e.html
+
+3. Controlling Linguistic Style Aspects in Neural Language Generation (Ficler et al., ACL Workshop 2017)
+    <br> * Paper: https://aclanthology.org/W17-4912/
+
+4. Lexically constrained decoding for sequence generation using grid beam search (Hokamp et al., ACL 2017)
+    <br> * Paper: https://aclanthology.org/P17-1141.pdf
+
+5. Affect-LM: A Neural Language Model for Customizable Affective Text Generation (Ghosh et al., ACL 2017)
+    <br> * Paper: https://aclanthology.org/P17-1059/
+
+6. Guided Open Vocabulary Image Captioning with Constrained Beam Search (Anderson et al., EMNLP 2017)
+    <br> * Paper: https://aclanthology.org/D17-1098/?ref=https://githubhelp.com
+
+7. Fast Lexically Constrained Decoding with Dynamic Beam Allocation for Neural Machine Translation (Post and Vilar, NAACL 2018)
+    <br> * Paper: https://aclanthology.org/N18-1119/
+
+8. Towards Controllable Story Generation (Peng et al., ACL Workshop 2018)
+    <br> * Paper: https://aclanthology.org/W18-1505.pdf
+
+9. Controllable Abstractive Summarization (Fan et al., ACL Workshop 2018)
+    <br> * Paper: https://aclanthology.org/W18-2706/
+
+10. Content preserving text generation with attribute controls (Logeswaren et al., NeurIPS 2018)
+    <br> * Paper: https://proceedings.neurips.cc/paper/2018/hash/7cf64379eb6f29a4d25c4b6a2df713e4-Abstract.html
+
+11. Polite Dialogue Generation Without Parallel Data (Niu and Bansal, TACL 2018)
+    <br> * Paper: https://aclanthology.org/Q18-1027/
+
+12. Latent Constraints: Learning to Generate Conditionally from Unconditional Generative Models (Engel et al., ICLR 2018)
+    <br> * Paper: https://openreview.net/forum?id=Sy8XvGb0-
+
+13. Plug and play language models: A simple approach to controlled text generation (Dathathri et al., ICLR 2019)
+    <br> * Paper: https://arxiv.org/abs/1912.02164
+
+14. CTRL: A Conditional Transformer Language Model for Controllable Generation (Keskar et al., 2019)
+    <br> * Paper: https://arxiv.org/abs/1909.05858
+
+15. What makes a good conversation? How controllable attributes affect human judgment (See et al., NAACL 2019)
+    <br> * Paper: http://aclanthology.lst.uni-saarland.de/N19-1170.pdf
+
+16. CGMH: Constrained Sentence Generation by Metropolis-Hastings Sampling (Miao et al., AAAI 2019)
+    <br> * Paper: https://arxiv.org/pdf/1811.10996.pdf
+
+17. Topic-Guided Variational Autoencoders for Text Generation (Wang et al., NAACL 2019)
+    <br> * Paper: https://aclanthology.org/N19-1015/
+
+18. GeDi: Generative Discriminator Guided Sequence Generation (Krause et al., 2020)
+    <br> * Paper: https://arxiv.org/abs/2009.06367
+
+19. Gradient-guided unsupervised lexically constrained text generation (Sha, EMNLP 2020)
+    <br> * Paper: https://aclanthology.org/2020.emnlp-main.701.pdf
+
+20. Plug-and-Play Conversational Models (Madotto et al., EMNLP 2020)
+    <br> * Paper: https://aclanthology.org/2020.findings-emnlp.219/
+
+21. Exploring Controllable Text Generation Techniques (Prabhumoye et al., COLING 2020)
+    <br> * Paper: https://aclanthology.org/2020.coling-main.1/
+
+22. Towards Controllable Biases in Language Generation (Sheng et al., EMNLP 2020)
+    <br> * Paper: https://aclanthology.org/2020.findings-emnlp.291/
+
+23. A distributional approach to controlled text generation (Khalifa et al., ICLR 2020)
+    <br> * Paper: https://arxiv.org/pdf/2012.11635.pdf
+
+24. Controllable Text Generation with Focused Variation (Shu et al., ACL 2020)
+    <br> * Paper: https://aclanthology.org/2020.findings-emnlp.339/
+
+25. Rigid Formats Controlled Text Generation (Li et al., ACL 2020)
+    <br> * Paper: https://aclanthology.org/2020.acl-main.68/
+
+26. POINTER: Constrained Progressive Text Generation via Insertion-based Generative Pre-training (Zhang et al., EMNLP 2020)
+    <br> * Paper: https://arxiv.org/abs/2005.00558
+
+27. PowerTransformer: Unsupervised controllable revision for biased language correction (Ma et al., EMNLP 2020)
+    <br> * Paper: https://aclanthology.org/2020.emnlp-main.602/
+
+28. MixingBoard: a Knowledgeable Stylized Integrated Text Generation Platform (Gao et al., ACL 2020)
+    <br> * Paper: https://aclanthology.org/2020.acl-demos.26/
+
+29. Pre-train and Plug-in: Flexible Conditional Text Generation with Variational Auto-Encoders (Duan et al., ACL 2020)
+    <br> * Paper: https://arxiv.org/pdf/1911.03882.pdf
+
+30. Plug and Play Autoencoders for Conditional Text Generation (Mai et al., EMNLP 2020)
+    <br> * Paper: https://arxiv.org/pdf/2010.02983.pdf
+
+31. DEXPERTS: Decoding-Time Controlled Text Generation with Experts and Anti-Experts (Liu et al., ACL 2021)
+    <br> * Paper: https://aclanthology.org/2021.acl-long.522.pdf
+
+32. FUDGE: Controlled Text Generation With Future Discriminators (Yang and Klein, NAACL 2021)
+    <br> * Paper: https://aclanthology.org/2021.naacl-main.276/
+
+33. Controlled Text Generation as Continuous Optimization with Multiple Constraints (Kumar et al., NeurIPS 2021)
+    <br> * Paper: https://openreview.net/forum?id=kTy7bbm-4I4
+
+34. Neurologic decoding:(un) supervised neural text generation with predicate logic constraints (Lu et al., NAACL 2021)
+    <br> * Paper: https://aclanthology.org/2021.naacl-main.339.pdf
+
+35. A Causal Lens for Controllable Text Generation (Hu and Li, NeurIPS 2021)
+    <br> * Paper: https://proceedings.neurips.cc/paper/2021/hash/d0f5edad9ac19abed9e235c0fe0aa59f-Abstract.html
+
+36. A Controllable Model of Grounded Response Generation (Wu et al., AAAI 2021)
+    <br> * Paper: https://ojs.aaai.org/index.php/AAAI/article/view/17658
+
+37. Cocon: A self-supervised approach for controlled text generation (Chan et al., ICLR 2021)
+    <br> * Paper: https://openreview.net/forum?id=VD_ozqvBy4W
+
+38. Generate your counterfactuals: Towards controlled counterfactual generation for text (Madaan et al., AAAI 2021)
+    <br> * Paper: https://ojs.aaai.org/index.php/AAAI/article/view/17594
+
+39. Mix and Match: Learning-free Controllable Text Generationusing Energy Language Models (Mireshghallah et al., ACL 2022)
+    <br> * Paper: https://aclanthology.org/2022.acl-long.31/
 
 
+### Style Transfer
 
+1. Style Transfer from Non-Parallel Text by Cross-Alignment (Shen et al., NeurIPS 2017)
+    <br> * Paper: https://arxiv.org/pdf/1705.09655.pdf
 
+2. Sequence to Better Sequence: Continuous Revision of Combinatorial Structures (Mueller et al., ICML 2017)
+    <br> * Paper: http://proceedings.mlr.press/v70/mueller17a/mueller17a.pdf
 
+3. Delete, Retrieve, Generate: A Simple Approach to Sentiment and Style Transfer (Li et al., NAACL 2018)
+    <br> * Paper: https://openreview.net/forum?id=B1bTGQ-ubS
 
+4. Style Transfer in Text: Exploration and Evaluation (Fu et al., AAAI 2018)
+    <br> * Paper: https://ojs.aaai.org/index.php/AAAI/article/view/11330
 
+5. Style Transfer Through Back-Translation (Prabhumoye et al., ACL 2018)
+    <br> * Paper: https://aclanthology.org/P18-1080/?ref=https://githubhelp.com
 
+6. Unsupervised Text Style Transfer using Language Models as Discriminators (Yang et al., NeurIPS 2018)
+    <br> * Paper: https://proceedings.neurips.cc/paper/2018/hash/398475c83b47075e8897a083e97eb9f0-Abstract.html
 
+7. Adversarially Regularized Autoencoders (Zhao et al., ICML 2018)
+    <br> * Paper: https://arxiv.org/pdf/1706.04223.pdf
 
+8. Unpaired Sentiment-to-Sentiment Translation: A Cycled Reinforcement Learning Approach (Xu et al., ACL 2018)
+    <br> * Paper: https://arxiv.org/pdf/1805.05181.pdf
 
+9. Adversarial Text Generation via Feature-Mover's Distance (Chen et al., NeurIPS 2018)
+    <br> * Paper: https://arxiv.org/pdf/1809.06297.pdf
 
+10. Dear Sir or Madam, May I introduce the YAFC Dataset: Corpus, Benchmarks and Metrics for Formality Style Transfer (Rao and Tetreault, NAACL 2018)
+    <br> * Paper: https://arxiv.org/pdf/1803.06535.pdf
 
+11. Fighting Offensive Language on Social Media with Unsupervised Text Style Transfer (Santos et al., ACL 2018)
+    <br> * Paper: https://arxiv.org/pdf/1805.07685.pdf
 
+12. Style Transformer: Unpaired Text Style Transfer without Disentangled Latent Representation (Dai et al., ACL 2019)
+    <br> * Paper: https://arxiv.org/pdf/1905.05621.pdf
 
+13. Transforming delete, retrieve, generate approach for controlled text style transfer (Sudhakar et al., EMNLP 2019)
+    <br> * Paper: https://aclanthology.org/D19-1322/
 
+14. Disentangled representation learning for non-parallel text style transfer (John et al., ACL 2019)
+    <br> * Paper: https://aclanthology.org/P19-1041/?ref=https://githubhelp.com
 
+15. Multiple-attribute text rewriting (Lample et al., ICLR 2019)
+    <br> * Paper: https://openreview.net/forum?id=H1g2NhC5KQ
 
+16. A dual reinforcement learning framework for unsupervised text style transfer (Luo et al., IJCAI 2019)
+    <br> * Paper: https://openreview.net/forum?id=oJvtywo_YP0
 
+17. Politeness Transfer: A Tag and Generate Approach (Madaan et al., ACL 2020)
+    <br> * Paper: https://arxiv.org/abs/2004.14257
 
+18. Contextual text style transfer (Cheng et al., EMNLP 2020)
+    <br> * Paper: https://aclanthology.org/2020.findings-emnlp.263/
 
+19. Reformulating unsupervised style transfer as paraphrase generation (Krishna et al., EMNLP 2020)
+    <br> * Paper: https://aclanthology.org/2020.emnlp-main.55/
 
+20. A probabilistic formulation of unsupervised text style transfer (He et al., ICLR 2020)
+    <br> * Paper: https://openreview.net/forum?id=HJlA0C4tPS
 
+21. Revision in Continuous Space: Unsupervised Text Style Transfer without Adversarial Learning (Liu et al., AAAI 2020)
+    <br> * Paper: https://arxiv.org/pdf/1905.12304.pdf
 
+22. On Variational Learning of Controllable Representations for Text without Supervision (Xu et al., ICML 2020)
+    <br> * Paper: https://arxiv.org/pdf/1905.11975.pdf
 
+23. Exploring Contextual Word-level Style Relevance for Unsupervised Style Transfer (Zhou et al., ACL 2020)
+    <br> * Paper: https://arxiv.org/pdf/2005.02049.pdf
 
+24. Text Style Transfer via Learning Style Instance Supported Latent Space (Yi et al., IJCAI 2020)
+    <br> * Paper: https://www.ijcai.org/Proceedings/2020/0526.pdf
 
+25. Cycle-Consistent Adversarial Autoencoders for Unsupervised Text Style Transfer (Huang et al., COLING 2020)
+    <br> * Paper: https://arxiv.org/pdf/2010.00735.pdf
 
+26. How Positive Are You: Text Style Transfer using Adaptive Style Embedding (Kim and Sohn, COLING 2020)
+    <br> * Paper: https://aclanthology.org/2020.coling-main.191.pdf
 
+27. Unsupervised Text Style Transfer with Padded Masked Language Models (Malmi et al., EMNLP 2020)
+    <br> * Paper: https://arxiv.org/pdf/2010.01054.pdf
 
+28. Unsupervised Text Generation by Learning from Search (Li et al., NeurIPS 2020)
+    <br> * Paper: https://papers.nips.cc/paper/2020/file/7a677bb4477ae2dd371add568dd19e23-Paper.pdf
 
+29. DGST: a Dual-Generator Network for Text Style Transfer (Li et al., EMNLP 2020)
+    <br> * Paper: https://arxiv.org/pdf/2010.14557.pdf
 
+30. Formality Style Transfer with Shared Latent Space (Wang et al., COLING 2020)
+    <br> * Paper: https://aclanthology.org/2020.coling-main.203.pdf
 
+31. Parallel Data Augmentation for Formality Style Transfer (Zhang et al., ACL 2020)
+    <br> * Paper: https://arxiv.org/pdf/2005.07522.pdf
 
+32. Expertise Style Transfer: A New Task Towards Better Communication between Experts and Laymen (Cao et al., ACL 2020)
+    <br> * Paper: https://arxiv.org/pdf/2005.00701.pdf
 
+33. Adapting Language Models for Non-Parallel Author-Stylized Rewriting (Syed et al., AAAI 2020)
+    <br> * Paper: https://arxiv.org/pdf/1909.09962.pdf
 
+34. Hooks in the Headline: Learning to Generate Headlines with Controlled Styles (Jin et al., ACL 2020)
+    <br> * Paper: https://arxiv.org/pdf/2004.01980.pdf
 
+35. Exploring Contextual Word-level Style Relevance for Unsupervised Style Transfer (Zhou et al., ACL 2020)
+    <br> * Paper: https://arxiv.org/pdf/2005.02049.pdf
 
+36. Style versus Content: A distinction without a (learnable) difference? (Jafaritazehjani et al., COLING 2020)
+    <br> * Paper: https://aclanthology.org/2020.coling-main.197.pdf
 
+37. Towards A Friendly Online Community: An Unsupervised Style Transfer Framework for Profanity Redaction (Tran et al., COLING 2020)
+    <br> * Paper: https://arxiv.org/pdf/2011.00403.pdf
 
+38. Style Pooling: Automatic Text Style Obfuscation for Improved Classification Fairness (Mireshghallah et al., EMNLP 2021)
+    <br> * Paper: https://aclanthology.org/2021.emnlp-main.152/
 
+39. On Learning Text Style Transfer with Direct Rewards (Liu et al., NAACL 2021)
+    <br> * Paper: https://arxiv.org/pdf/2010.12771.pdf
 
+40. Multi-Style Transfer with Discriminative Feedback on Disjoint Corpus (Goyal et al., NAACL 2021)
+    <br> * Paper: https://arxiv.org/pdf/2010.11578.pdf
 
+41. A Hierarchical VAE for Calibrating Attributes while Generating Text using Normalizing Flow (Samanta et al., ACL 2021)
+    <br> * Paper: https://aclanthology.org/2021.acl-long.187.pdf
 
+42. Enhancing Content Preservation in Text Style Transfer Using Reverse Attention and Conditional Layer Normalization (Lee et al., ACL 2021)
+    <br> * Paper: https://arxiv.org/pdf/2108.00449.pdf
 
+43. Counterfactuals to Control Latent Disentangled Text Representations for Style Transfer (Nangi et al., ACL 2021)
+    <br> * Paper: https://aclanthology.org/2021.acl-short.7.pdf
 
+44. TextSETTR: Few-Shot Text Style Extraction and Tunable Targeted Restyling (Riley et al., ACL 2021)
+    <br> * Paper: https://aclanthology.org/2021.acl-long.293.pdf
 
+45. LEWIS: Levenshtein Editing for Unsupervised Text Style Transfer (Reid and Zhong, ACL Findings 2021)
+    <br> * Paper: https://arxiv.org/pdf/2105.08206.pdf
 
+46. NAST: A Non-Autoregressive Generator with Word Alignment for Unsupervised Text Style Transfer (Huang et al., ACL Findings 2021)
+    <br> * Paper: https://arxiv.org/pdf/2106.02210.pdf
 
+47. Olá, Bonjour, Salve! XFORMAL: A Benchmark for Multilingual Formality Style Transfer (Briakou et al., NAACL 2021)
+    <br> * Paper: https://aclanthology.org/2021.naacl-main.256.pdf
 
+48. Improving Formality Style Transfer with Context-Aware Rule Injection (Yao et al., ACL 2021)
+    <br> * Paper: https://arxiv.org/pdf/2106.00210.pdf
 
+49. Thank you BART! Rewarding Pre-Trained Models Improves Formality Style Transfer (Lai et al., ACL 2021)
+    <br> * Paper: https://aclanthology.org/2021.acl-short.62.pdf
 
+50. Controllable Text Simplification with Explicit Paraphrasing (Maddela et al., NAACL 2021)
+    <br> * Paper: https://arxiv.org/pdf/2010.11004.pdf
 
+51. Paragraph-level Simplification of Medical Texts (Devaraj et al., NAACL 2021)
+    <br> * Paper: https://aclanthology.org/2021.naacl-main.395.pdf
 
+52. Towards Modeling the Style of Translators in Neural Machine Translation (Wang et al., NAACL 2021)
+    <br> * Paper: https://aclanthology.org/2021.naacl-main.94.pdf
 
+53. Inference Time Style Control for Summarization (Cao et al., NAACL 2021)
+    <br> * Paper: https://arxiv.org/pdf/2104.01724.pdf
 
+54. Exploring Non-Autoregressive Text Style Transfer (Ma and Li, EMNLP 2021)
+    <br> * Paper: https://aclanthology.org/2021.emnlp-main.730.pdf
 
+55. Generic resources are what you need: Style transfer tasks without task-specific parallel training data (Lai et al., EMNLP 2021)
+    <br> * Paper: https://arxiv.org/pdf/2109.04543.pdf
 
+56. Transductive Learning for Unsupervised Text Style Transfer (Xiao et al., EMNLP 2021)
+    <br> * Paper: https://arxiv.org/pdf/2109.07812.pdf
 
+57. Collaborative Learning of Bidirectional Decoders for Unsupervised Text Style Transfer (Ma et al., EMNLP 2021)
+    <br> * Paper: https://aclanthology.org/2021.emnlp-main.729.pdf
+
+58. STYLEPTB: A Compositional Benchmark for Fine-grained Controllable Text Style Transfer (Lyu et al., NAACL 2021)
+    <br> * Paper: https://arxiv.org/pdf/2104.05196.pdf
+
+59. Rethinking Sentiment Style Transfer (Yu et al., EMNLP 2021)
+    <br> * Paper: https://aclanthology.org/2021.findings-emnlp.135.pdf
+
+60. Evaluating the Evaluation Metrics for Style Transfer: A Case Study in Multilingual Formality Transfer (Briakou et al., EMNLP 2021)
+    <br> * Paper: https://aclanthology.org/2021.emnlp-main.100.pdf
+
+61. Does It Capture STEL? A Modular, Similarity-based Linguistic Style Evaluation Framework (Wegmann et al., EMNLP 2021)
+    <br> * Paper: https://aclanthology.org/2021.emnlp-main.569.pdf
+
+62. MISS: An Assistant for Multi-Style Simultaneous Translation (Li et al., EMNLP 2021)
+    <br> * Paper: https://aclanthology.org/2021.emnlp-demo.1.pdf
+
+63. A Recipe for Arbitrary Text Style Transfer with Large Language Models (Reif et al., ACL 2022)
+    <br> * Paper: https://aclanthology.org/2022.acl-short.94/
+
+64. So Different Yet So Alike! Constrained Unsupervised Text Style Transfer (Kashyap et al., ACL 2022)
+    <br> * Paper: https://aclanthology.org/2022.acl-long.32.pdf
+
+65. Semi-Supervised Formality Style Transfer with Consistency Training (Liu et al., ACL 2022)
+    <br> * Paper: https://aclanthology.org/2022.acl-long.321.pdf
 
 
 
@@ -322,4 +579,8 @@
 
 
 ## Acknowledgement
-We thank [Yang et al.](https://arxiv.org/pdf/2209.00796.pdf) for their comprehensive survey on recent development of diffusion models. Their work can be found [here](https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy)
+We thank [Yang et al.](https://arxiv.org/pdf/2209.00796.pdf) and [Jin et al.](https://arxiv.org/pdf/2011.00416.pdf) for their comprehensive survey on recent development of diffusion models and style transfer. Their work can be found in the following github repositories:
+
+[Diffusion Models: A Comprehensive Survey of Methods and Applications](https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy)
+
+[Deep Learning for Text Style Transfer: A Survey](https://github.com/zhijing-jin/Text_Style_Transfer_Survey)
