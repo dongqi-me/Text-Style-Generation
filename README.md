@@ -8,83 +8,112 @@
 
 1. Hafez: an Interactive Poetry Generation System (Ghazvininejad et al., ACL 2017)
     <br> * Paper: https://aclanthology.org/P17-4008.pdf 
+    <br> * Approach: RNN+FSA
 2. Toward Controlled Generation of Text (Hu et al., ICML 2017)
     <br> * Paper: http://proceedings.mlr.press/v70/hu17e.html
     <br> * Code: https://github.com/asyml/texar
+    <br> * Approach: VAE+holistic feature discriminator (LSTM)
 3. Controlling Linguistic Style Aspects in Neural Language Generation (Ficler et al., ACL Workshop 2017)
     <br> * Paper: https://aclanthology.org/W17-4912/
+    <br> * Approach: Conditional LSTM model
 4. Lexically constrained decoding for sequence generation using grid beam search (Hokamp et al., ACL 2017)
     <br> * Paper: https://aclanthology.org/P17-1141.pdf
     <br> * Code: https://github.com/chrishokamp/constrained_decoding
+    <br> * Approach: Grid beam search as decoding that can be paired with any autoregressively generative model
 5. Affect-LM: A Neural Language Model for Customizable Affective Text Generation (Ghosh et al., ACL 2017)
     <br> * Paper: https://aclanthology.org/P17-1059/
+    <br> * Approach: LSTM with additional energy term as condition
 6. Guided Open Vocabulary Image Captioning with Constrained Beam Search (Anderson et al., EMNLP 2017)
     <br> * Paper: https://aclanthology.org/D17-1098/?ref=https://githubhelp.com
     <br> * Code: https://github.com/nocaps-org/updown-baseline
+    <br> * Approach: Constrained beam search as decoding that can be paired with any autoregressively generative model
 7. Fast Lexically Constrained Decoding with Dynamic Beam Allocation for Neural Machine Translation (Post and Vilar, NAACL 2018)
     <br> * Paper: https://aclanthology.org/N18-1119/
+    <br> * Approach: Dynamic beam allocation as decoding that can be paired with any autoregressively generative model
 8. Towards Controllable Story Generation (Peng et al., ACL Workshop 2018)
     <br> * Paper: https://aclanthology.org/W18-1505.pdf 
+    <br> * Approach: Conditional LSTM / seq2seq LSTM model from storyline to story
 9. Controllable Abstractive Summarization (Fan et al., ACL Workshop 2018)
     <br> * Paper: https://aclanthology.org/W18-2706/
-
+    <br> * Approach: Convolutional seq2seq model with attention, specific prefix to control certain attributes
 10. Content preserving text generation with attribute controls (Logeswaren et al., NeurIPS 2018)
     <br> * Paper: https://proceedings.neurips.cc/paper/2018/hash/7cf64379eb6f29a4d25c4b6a2df713e4-Abstract.html
     <br> * Code: https://github.com/hwijeen/CPTG
+    <br> * Approach: RNN-based encoder-decoder model trained with auto-encoding, back-translation and adversarial loss
 11. Polite Dialogue Generation Without Parallel Data (Niu and Bansal, TACL 2018)
     <br> * Paper: https://aclanthology.org/Q18-1027/
     <br> * Code: https://github.com/WolfNiu/polite-dialogue-generation
+    <br> * Approach: RNN-based fusion/label fine-tuning/RL models
 12. Latent Constraints: Learning to Generate Conditionally from Unconditional Generative Models (Engel et al., ICLR 2018)
     <br> * Paper: https://openreview.net/forum?id=Sy8XvGb0-
+    <br> * Approach: Gradient-based optimization/amortized generator (LSTM)
 13. Plug and play language models: A simple approach to controlled text generation (Dathathri et al., ICLR 2019)
     <br> * Paper: https://arxiv.org/abs/1912.02164
     <br> * Code: https://github.com/uber-research/PPLM
+    <br> * Approach: Iterative gradient-based optimization with transformer generator
 14. CTRL: A Conditional Transformer Language Model for Controllable Generation (Keskar et al., 2019)
     <br> * Paper: https://arxiv.org/abs/1909.05858
     <br> * Code: https://github.com/PaddlePaddle/PaddleNLP/tree/develop/paddlenlp/transformers/ctrl
+    <br> * Approach: A large scale pre-trained conditional transformer conditioned on selected control codes
 15. What makes a good conversation? How controllable attributes affect human judgment (See et al., NAACL 2019)
     <br> * Paper: http://aclanthology.lst.uni-saarland.de/N19-1170.pdf
     <br> * Code: https://github.com/HMJiangGatech/dialogue_ope_data
+    <br> * Approach: dialogue-level Bi-LSTM based conditional training/ word-level weighted decoding
 16. CGMH: Constrained Sentence Generation by Metropolis-Hastings Sampling (Miao et al., AAAI 2019)
     <br> * Paper: https://arxiv.org/pdf/1811.10996.pdf
     <br> * Code: https://github.com/NingMiao/CGMH
+    <br> * Approach: RNN based, a specially designed MCMC approach for decoding
 17. Topic-Guided Variational Autoencoders for Text Generation (Wang et al., NAACL 2019)
     <br> * Paper: https://aclanthology.org/N19-1015/
+    <br> * Approach: VAE with a neural topic model (RNN based)
 18. GeDi: Generative Discriminator Guided Sequence Generation (Krause et al., 2020)
     <br> * Paper: https://arxiv.org/abs/2009.06367
     <br> * Code: https://github.com/salesforce/GeDi
+    <br> * Approach: use a small class conditional LM to assist a large generative model (GPT-2) to make conditional next token prediction
 19. Gradient-guided unsupervised lexically constrained text generation (Sha, EMNLP 2020)
     <br> * Paper: https://aclanthology.org/2020.emnlp-main.701.pdf
+    <br> * Approach: Edit the output of a generator (LSTM) following the guidance of the gradient of a loss function (lexical constraint, semantic similarity, fluency) w.r.t word representations
 20. Plug-and-Play Conversational Models (Madotto et al., EMNLP 2020)
     <br> * Paper: https://aclanthology.org/2020.findings-emnlp.219/
     <br> * Code: https://github.com/andreamad8/PPCM
+    <br> * Approach: First generate a pseudo dataset with certain attributes using a plug-and-play transformer, then train a adapter for each attribute for low inference latency
 21. Exploring Controllable Text Generation Techniques (Prabhumoye et al., COLING 2020)
     <br> * Paper: https://aclanthology.org/2020.coling-main.1/
+    <br> * Approach: A literature overview
 22. Towards Controllable Biases in Language Generation (Sheng et al., EMNLP 2020)
     <br> * Paper: https://aclanthology.org/2020.findings-emnlp.291/
     <br> * Code: https://github.com/ewsheng/nlg-bias
+    <br> * Approach: [Prompt]Design objectives to search triggers that can induce and mitigate biases in genetated texts
 23. A distributional approach to controlled text generation (Khalifa et al., ICLR 2020)
     <br> * Paper: https://arxiv.org/pdf/2012.11635.pdf
     <br> * Code: https://github.com/naver/gdc
+    <br> * Approach: First train an energy-based model that satisfies hard/distributional conditions, then train a controlled autoregressive lm through an adaptive distributional variant of Policy Gradient
 24. Controllable Text Generation with Focused Variation (Shu et al., ACL 2020)
     <br> * Paper: https://aclanthology.org/2020.findings-emnlp.339/
+    <br> * Approach: A VAE model with content/style encoders. Text encoder and decoder are LSTM
 25. Rigid Formats Controlled Text Generation (Li et al., ACL 2020)
     <br> * Paper: https://aclanthology.org/2020.acl-main.68/
     <br> * Code: https://github.com/lipiji/SongNet
+    <br> * Approach: Transformer based decoder, format-related embeddings introduced, a global attention mechanism is applied during training to capture future information
 26. POINTER: Constrained Progressive Text Generation via Insertion-based Generative Pre-training (Zhang et al., EMNLP 2020)
     <br> * Paper: https://arxiv.org/abs/2005.00558
     <br> * Code: https://github.com/dreasysnail/POINTER
+    <br> * Approach: An insertion-based transformer pre-trained on large-scale corpus and fine-tuned on downstream hard lexical constrained text generation tasks
 27. PowerTransformer: Unsupervised controllable revision for biased language correction (Ma et al., EMNLP 2020)
     <br> * Paper: https://aclanthology.org/2020.emnlp-main.602/
+    <br> * Approach: GPT model trained jointly on verb MLM+paraphrasing tasks, rescale the logits of next tokens with certain attributes before making predictions 
 28. MixingBoard: a Knowledgeable Stylized Integrated Text Generation Platform (Gao et al., ACL 2020)
     <br> * Paper: https://aclanthology.org/2020.acl-demos.26/
     <br> * Code: https://github.com/microsoft/MixingBoard
+    <br> * Approach: A platform with various generation sub-models (stylized, constrained, conditioned, knowledge based generation etc.) and integrate them using token probability interpolation and latent interpolation. Stylized generation is implemented as first generate then edit/retrieve.
 29. Pre-train and Plug-in: Flexible Conditional Text Generation with Variational Auto-Encoders (Duan et al., ACL 2020)
     <br> * Paper: https://arxiv.org/pdf/1911.03882.pdf
     <br> * Code: https://github.com/WHUIR/PPVAE
+    <br> * Approach: A pre-trained unconditional VAE model (GRU encoder, transformer decoder) and a plug-in conditional VAE model (MLP encoder decoder) mapping global latent space to conditional latent space. By training a new plug-in VAE on a small amount of data it is possible to add new conditions.
 30. Plug and Play Autoencoders for Conditional Text Generation (Mai et al., EMNLP 2020)
     <br> * Paper: https://arxiv.org/pdf/2010.02983.pdf
     <br> * Code: https://github.com/florianmai/emb2emb
+    <br> * Approach: Train a plug-in mapping between latent space of a pre-trained VAE model and a conditional subspace. The predicted embedding is fed to decoder, and a gradient-based optimization method is used to guide generation. (LSTM autoencoder)
 31. DEXPERTS: Decoding-Time Controlled Text Generation with Experts and Anti-Experts (Liu et al., ACL 2021)
     <br> * Paper: https://aclanthology.org/2021.acl-long.522.pdf
     <br> * Code: https://github.com/alisawuffles/DExperts
