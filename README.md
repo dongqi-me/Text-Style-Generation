@@ -146,7 +146,7 @@
 39. Mix and Match: Learning-free Controllable Text Generationusing Energy Language Models (Mireshghallah et al., ACL 2022)
     <br> * Paper: https://aclanthology.org/2022.acl-long.31/
     <br> * Code: https://github.com/mireshghallah/mixmatch
-    <br> * Approach: An energy-based model. Pre-trained components are linearly combined without further fine-tuning. A Metropolis-Hastings MCMC is used to sample from MLM
+    <br> * Approach: An energy-based model. Pre-trained components are linearly combined without further fine-tuning. A Metropolis-Hastings MCMC is used to sample from MLM (controlled text generation and text revision).
 
 
 
@@ -157,75 +157,75 @@
 1. Style Transfer from Non-Parallel Text by Cross-Alignment (Shen et al., NeurIPS 2017)
     <br> * Paper: https://arxiv.org/pdf/1705.09655.pdf
     <br> * Code: https://github.com/shentianxiao/language-style-transfer
-    <br> * Approach:
+    <br> * Approach: Assume a common content distribution determines generative process of two non-parallel datasets of different attributes, two auto-encoders with aligned posterior or aligned samples is trained via discriminators (GRU-based). The auto-encoders can be then used as style transfer functions. 
 2. Sequence to Better Sequence: Continuous Revision of Combinatorial Structures (Mueller et al., ICML 2017)
     <br> * Paper: http://proceedings.mlr.press/v70/mueller17a/mueller17a.pdf
-    <br> * Approach:
+    <br> * Approach: RNN-based VAE, with a ffnn predicting an output scalar given latent variable. A source sentence is first encoded, the latent representation is then refined according to the gradient of ffnn to generate its revised version.
 3. Delete, Retrieve, Generate: A Simple Approach to Sentiment and Style Transfer (Li et al., NAACL 2018)
     <br> * Paper: https://openreview.net/forum?id=B1bTGQ-ubS
     <br> * Code: https://github.com/lijuncen/Sentiment-and-Style-Transfer
-    <br> * Approach:
+    <br> * Approach: First identify attribute markers from datasets, then delete source attribute markers and retrieve attribute sentences/markers that are similar to the content of source sentence (both in a non-neural manner). To transfer, RNN generates a new sentence conditioned on the content of the source and retrieved sentence
 4. Style Transfer in Text: Exploration and Evaluation (Fu et al., AAAI 2018)
     <br> * Paper: https://ojs.aaai.org/index.php/AAAI/article/view/11330
     <br> * Code: https://github.com/fuzhenxin/text_style_transfer
-    <br> * Approach:
+    <br> * Approach: A encoder-multiple decoder system or encoder-decoder-style embedding system (GRU-based). The encoder is intended to learn only content and is trained via adversarial networks
 5. Style Transfer Through Back-Translation (Prabhumoye et al., ACL 2018)
     <br> * Paper: https://aclanthology.org/P18-1080/?ref=https://githubhelp.com
     <br> * Code: https://github.com/shrimai/Style-Transfer-Through-Back-Translation
-    <br> * Approach:
+    <br> * Approach: A latent representation that preserves only content is obtained by a back-translation system (en-fr, fr-en) trained on style-agnostic corpus. An LSTM with attention model generates output conditioned on latent code, which is trained to minimize generation loss and classification loss provided by a pre-trained CNN label-classifier.
 6. Unsupervised Text Style Transfer using Language Models as Discriminators (Yang et al., NeurIPS 2018)
     <br> * Paper: https://proceedings.neurips.cc/paper/2018/hash/398475c83b47075e8897a083e97eb9f0-Abstract.html
     <br> * Code: https://github.com/asyml/texar/tree/master/examples/text_style_transfer
-    <br> * Approach:
+    <br> * Approach: Use a language model on target corpus as discriminator, train the encoder, generator (VAE) and language model (discriminator) by maximizing real sentences in the corpus and minimizing transferred sentences from other datasets. 
 7. Adversarially Regularized Autoencoders (Zhao et al., ICML 2018)
     <br> * Paper: https://arxiv.org/pdf/1706.04223.pdf
     <br> * Code: https://github.com/jakezhaojb/ARAE
-    <br> * Approach:
+    <br> * Approach: A Wasserstein autoencoder model (RNN) with prior learned by a GAN generator and Wasserstein distance learned by GAN discriminator (MLP). An MLP classifier can provide guidance during training.
 8. Unpaired Sentiment-to-Sentiment Translation: A Cycled Reinforcement Learning Approach (Xu et al., ACL 2018)
     <br> * Paper: https://arxiv.org/pdf/1805.05181.pdf
     <br> * Code: https://github.com/lancopku/unpaired-sentiment-translation
-    <br> * Approach:
+    <br> * Approach: An LSTM with attention model is first trained to predict the sentiment of a sentence, and its attention weight is used to detect neutral and polar words in an input sentence. A neutralization model learns to predict neutral/polar words. A emotionalization model (Seq2seq) encodes neutral words of a sentence and sentiment is added to the decoder. Both models are first pre-trained and then trained end2end with RL approach.
 9. Adversarial Text Generation via Feature-Mover's Distance (Chen et al., NeurIPS 2018)
     <br> * Paper: https://arxiv.org/pdf/1809.06297.pdf
     <br> * Code: https://github.com/vijini/FM-GAN
-    <br> * Approach:
+    <br> * Approach: A conditional VAE to extract style-agnostic content and add style, trained with GAN with Feature-Mover's distance as discriminator. (LSTM+CNN) 
 10. Dear Sir or Madam, May I introduce the YAFC Dataset: Corpus, Benchmarks and Metrics for Formality Style Transfer (Rao and Tetreault, NAACL 2018)
     <br> * Paper: https://arxiv.org/pdf/1803.06535.pdf
-    <br> * Approach:
+    <br> * Approach: A supervised dataset with formal/informal sentence pairs. Baseline models are proprosed which see supervised style transfer as a machine translation task.
 11. Fighting Offensive Language on Social Media with Unsupervised Text Style Transfer (Santos et al., ACL 2018)
     <br> * Paper: https://arxiv.org/pdf/1805.07685.pdf
-    <br> * Approach:
+    <br> * Approach: A GRU with attention encoder decoder system is trained with auto-encoding and back-translation tasks, with a classifier ensuring the transferred sentence have the desired attribute (adversarial training)
 12. Style Transformer: Unpaired Text Style Transfer without Disentangled Latent Representation (Dai et al., ACL 2019)
     <br> * Paper: https://arxiv.org/pdf/1905.05621.pdf
     <br> * Code: https://github.com/fastnlp/style-transformer
-    <br> * Approach:
+    <br> * Approach: A transformer with style embedding is trained with auto-encoding and back-translation, and a transformer encoder classifier is used to ensure the transferred sentence have the given style. Both models are trained iteratively. 
 13. Transforming delete, retrieve, generate approach for controlled text style transfer (Sudhakar et al., EMNLP 2019)
     <br> * Paper: https://aclanthology.org/D19-1322/
     <br> * Code: https://github.com/agaralabs/transformer-drg-style-transfer
-    <br> * Approach:
+    <br> * Approach: A Bert-based style classifier detects stylistic components in a sentence according to attention scores, these components will be removed to get the style-agnostic content, and a non-neural retrieve model selects sentences from target style datasets whose content is similar to the input's content. A GPT model learns to generate transferred sentence given the input content and target style or retrieved target attributes. Since there is no parallel data, the generative models learns from a denoising reconstruction task. Attributes can be set by user during inference.
 14. Disentangled representation learning for non-parallel text style transfer (John et al., ACL 2019)
     <br> * Paper: https://aclanthology.org/P19-1041/?ref=https://githubhelp.com
     <br> * Code: https://github.com/vineetjohn/linguistic-style-transfer
-    <br> * Approach:
+    <br> * Approach: An RNN-based VAE model whose latent space is expected to be a concatenation of style encoding and content encoding. This is trained by 1. maximizing the probability of style/content encoding predicting style/content and 2. minimizing the probability of style/content encoding predicting content/style (four discriminators). 
 15. Multiple-attribute text rewriting (Lample et al., ICLR 2019)
     <br> * Paper: https://openreview.net/forum?id=H1g2NhC5KQ
     <br> * Code: https://github.com/martiansideofthemoon/style-transfer-paraphrase
-    <br> * Approach:
+    <br> * Approach: LSTM encoder decoder model trained with denoising auto-encoding and back translation task. Attribute-specific start of sentence token is used for decoding in different styles.
 16. A dual reinforcement learning framework for unsupervised text style transfer (Luo et al., IJCAI 2019)
     <br> * Paper: https://openreview.net/forum?id=oJvtywo_YP0
     <br> * Code: https://github.com/luofuli/DualLanST
-    <br> * Approach:
+    <br> * Approach: Two models that transfer styles in two directions are trained together with first back-translated pseudo parallel data then with content-preserving and style changing metrics in an RL approach.
 17. Politeness Transfer: A Tag and Generate Approach (Madaan et al., ACL 2020)
     <br> * Paper: https://arxiv.org/abs/2004.14257
     <br> * Code: https://github.com/tag-and-generate/Politeness-Transfer-A-Tag-and-Generate-Approach
-    <br> * Approach:
+    <br> * Approach: First collect phrases relevant to certain styles from datasets, which prepare style-agnostic and stylistic components as dataset for model training.Then a tagger learns to replace stylistic components from input with [tag]/add [tag] to neutral inputs, and a generator learns to fill in the [tag]. Both models are implemented with a transformer.
 18. Contextual text style transfer (Cheng et al., EMNLP 2020)
     <br> * Paper: https://aclanthology.org/2020.findings-emnlp.263/
-    <br> * Approach:
+    <br> * Approach: A dual encoder single decoder system that leverage context in style transfer. The sentence encoder decoder is trained unsupervised with auto-encoding, back-translation and a pre-trained style classifier teaches the model to add style. The whole system is also trained on supervised data, where the decoder is conditioned on the context encoding and input sentence encoding and target style, aiming to minimize difference from parallel data and maximize fluency. 
 19. Reformulating unsupervised style transfer as paraphrase generation (Krishna et al., EMNLP 2020)
     <br> * Paper: https://aclanthology.org/2020.emnlp-main.55/
     <br> * Code: https://github.com/martiansideofthemoon/style-transfer-paraphrase
-    <br> * Approach:
+    <br> * Approach: A pre-trained GPT-2 model learns to normalize input sentences (strip styles) to form normalized-stylistic training pairs and another GPT-2 model learns to add style from the pseudo parallel data. During inference inputs are first normalized then style is inserted. 
 20. A probabilistic formulation of unsupervised text style transfer (He et al., ICLR 2020)
     <br> * Paper: https://openreview.net/forum?id=HJlA0C4tPS
     <br> * Code: https://github.com/cindyxinyiwang/deep-latent-sequence-model
@@ -233,28 +233,28 @@
 21. Revision in Continuous Space: Unsupervised Text Style Transfer without Adversarial Learning (Liu et al., AAAI 2020)
     <br> * Paper: https://arxiv.org/pdf/1905.12304.pdf
     <br> * Code: https://github.com/dayihengliu/Fine-Grained-Style-Transfer
-    <br> * Approach:
+    <br> * Approach: An RNN-based VAE is trained jointly with a content (bag-of-word) predictor and attribute predictor (based on latent representation). During inference the revision is done on latent space and is guided by gradients of predictors.
 22. On Variational Learning of Controllable Representations for Text without Supervision (Xu et al., ICML 2020)
     <br> * Paper: https://arxiv.org/pdf/1905.11975.pdf
     <br> * Code: https://github.com/BorealisAI/CP-VAE
-    <br> * Approach:
+    <br> * Approach: Learn to map posterior of VAE (LSTM+MLP) to a probability simplex which has no vacancy. Latent representation is a concatenation of content representation and style representation, which can be manipulated during inference.P
 23. Exploring Contextual Word-level Style Relevance for Unsupervised Style Transfer (Zhou et al., ACL 2020)
     <br> * Paper: https://arxiv.org/pdf/2005.02049.pdf
     <br> * Code: https://github.com/PaddlePaddle/Research
-    <br> * Approach:
+    <br> * Approach: An encoder decoder model (GRU with attention) learns to reconstruct input and detect each word's relevance to the style (learn from a pre-trained style classifier). An MLP learns to add the revision to hidden states at each step, which is trained jointly with the encoder decoder model against style classification and content preserving losses.
 24. Text Style Transfer via Learning Style Instance Supported Latent Space (Yi et al., IJCAI 2020)
     <br> * Paper: https://www.ijcai.org/Proceedings/2020/0526.pdf
-    <br> * Approach:
+    <br> * Approach: A generative flow based model learns latent distribution of each style, and an lstm with attention encoder decoder is trained on auto-encoding and back-translation with adversarial training of a style classifier. The style representation is concatenated to word embedding in decoder at each step. 
 25. Cycle-Consistent Adversarial Autoencoders for Unsupervised Text Style Transfer (Huang et al., COLING 2020)
     <br> * Paper: https://arxiv.org/pdf/2010.00735.pdf
-    <br> * Approach:
+    <br> * Approach: Two autoencoders (LSTM) are trained for two style corpora. Two transformation functions are learned to map latent space of one autoencoder to the other by adversarial training and cycle-consistent constraints.
 26. How Positive Are You: Text Style Transfer using Adaptive Style Embedding (Kim and Sohn, COLING 2020)
     <br> * Paper: https://aclanthology.org/2020.coling-main.191.pdf
     <br> * Code: https://github.com/kinggodhj/how-positive-are-you-text-style-transfer-using-adaptive-style-embedding
-    <br> * Approach:
+    <br> * Approach: A transformer autoencoder learns to reconstruct inputs, and another model learns style embedding. The style is added to latent representation of autoencoder before it is fed into decoder. Both models are trained jointly.
 27. Unsupervised Text Style Transfer with Padded Masked Language Models (Malmi et al., EMNLP 2020)
     <br> * Paper: https://arxiv.org/pdf/2010.01054.pdf
-    <br> * Approach:
+    <br> * Approach: Train two padded MLMs (in the experiment one conditional MLM) on source and target domain, find the span that two MLMs differ the most in terms of probability from an input, mask these spans and ask the target-side model to predict tokens. 
 28. Unsupervised Text Generation by Learning from Search (Li et al., NeurIPS 2020)
     <br> * Paper: https://papers.nips.cc/paper/2020/file/7a677bb4477ae2dd371add568dd19e23-Paper.pdf
     <br> * Approach:
